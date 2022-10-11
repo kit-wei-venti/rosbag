@@ -1,7 +1,3 @@
-x = open('random.txt','r')
+x_y = "471249020945235"
 
-for line in x:
-    if 'hello' in line:
-        print(line)
-
-x.close()
+print(x_y[1])
