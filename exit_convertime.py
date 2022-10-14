@@ -7,6 +7,7 @@ import time
 
 def timeconverter():
 
+    global time                                       #declare it as a global variable, if not local variable error
     a = input("press a to continue, x to exit: \n")
 
     if a == 'a':
@@ -21,7 +22,7 @@ def timeconverter():
     
         print("Given rosbag timestamp: ", timestamp_bag)  
         print("Converted Datetime: ", date_time )  
-
+        
 
         time = date_time.time()
 
@@ -32,28 +33,39 @@ def timeconverter():
         print("Minute : {}".format(minute))
 
 
+        print(hour)
+    
 
         if (minute > 32):
             print("choose bagfile with 9:32 ")
         
 
     elif a == 'x':
-        print("exciting.")
+        print("exciting .......................")
         time.sleep(0.2)
-        print("exciting..")
+        print("exciting  .....................")
         time.sleep(0.2)
-        print("exciting...")
+        print("exciting   ...................")
         time.sleep(0.2)
-        print("exciting....")
+        print("exciting    .................")
         time.sleep(0.2)
-        print("exciting.....")
+        print("exciting     ...............")
         time.sleep(0.2)
-        print("exciting......")
+        print("exciting      .............")
         time.sleep(0.2)
-        print("exciting.......")
+        print("exciting       ...........")
         time.sleep(0.2)
-        print("exciting........")
-
+        print("exciting        .........")
+        time.sleep(0.2)
+        print("exciting         .......")
+        time.sleep(0.2)
+        print("exciting          .....")
+        time.sleep(0.2)
+        print("exciting           ...")
+        time.sleep(0.2)
+        print("exciting            .")
+        time.sleep(0.2)
+     
 
     else:
         print("error")
