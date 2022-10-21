@@ -6,7 +6,7 @@ import os             #use when dealing with file/directory
 
 
 
-anynumber = 34
+#anynumber = 34
 
 
 '''def find_file():
@@ -40,7 +40,7 @@ anynumber = 34
 
 
 
-search_bag_file = input("Name of text file? \n")
+'''search_bag_file = input("Name of text file? \n")
 
 if search_bag_file > 32:
     rootDir = "/home/kitwei/Desktop"
@@ -49,7 +49,20 @@ if search_bag_file > 32:
     for relPath, dirs, files in os.walk(rootDir):
         if fileToSearch in files:
             fullPath = os.path.join(rootDir, relPath,fileToSearch)
-            print(fullPath)
+            print(fullPath) '''
+
+
+
+#code below is used to search for file based on file name
+
+keyword = input("what bag files you wanna find?\n")
+#keyword = '.bag'
+for fname in os.listdir('/home/kitwei/Desktop/rosbag-project'):
+    if keyword in fname:
+        print(fname, "has the keyword")
+
+
+
 
 
 
